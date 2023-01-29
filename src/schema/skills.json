@@ -1,0 +1,738 @@
+{
+    "SL": {
+        "Q": {
+            "rgb": [
+                135,
+                105,
+                110
+            ],
+            "q_attack_mode": "Hold",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                120,
+                90,
+                95
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                72,
+                42,
+                47
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                106,
+                76,
+                81
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                87,
+                56,
+                62
+            ],
+            "a_attack_mode": "Hold",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                72,
+                42,
+                47
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                97,
+                67,
+                72
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                68,
+                38,
+                44
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                83,
+                52,
+                58
+            ],
+            "hold_awakening": true,
+            "hold_awakening_for": 4
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "DB": {
+        "Q": {
+            "rgb": [
+                66,
+                24,
+                132
+            ],
+            "q_attack_mode": "Tap",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                140,
+                67,
+                219
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                10,
+                58,
+                103
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                25,
+                71,
+                89
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                19,
+                102,
+                157
+            ],
+            "a_attack_mode": "Tap",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                123,
+                53,
+                16
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                117,
+                54,
+                30
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                123,
+                202,
+                222
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                131,
+                224,
+                239
+            ],
+            "hold_awakening": false,
+            "hold_awakening_for": 4
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "GS": {
+        "Q": {
+            "rgb": [
+                48,
+                10,
+                5
+            ],
+            "q_attack_mode": "Tap",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                205,
+                65,
+                22
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                145,
+                62,
+                12
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                65,
+                31,
+                13
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                218,
+                127,
+                44
+            ],
+            "a_attack_mode": "Tap",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                84,
+                37,
+                17
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                187,
+                92,
+                26
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                44,
+                11,
+                5
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                103,
+                39,
+                7
+            ],
+            "hold_awakening": false,
+            "hold_awakening_for": 4
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "Sorc": {
+        "Q": {
+            "rgb": [
+                224,
+                194,
+                152
+            ],
+            "q_attack_mode": "Tap",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                123,
+                205,
+                217
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                76,
+                133,
+                180
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                23,
+                77,
+                144
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                58,
+                42,
+                182
+            ],
+            "a_attack_mode": "Tap",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                131,
+                203,
+                255
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                135,
+                196,
+                219
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                41,
+                113,
+                173
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                104,
+                134,
+                138
+            ],
+            "hold_awakening": false,
+            "hold_awakening_for": 4
+        },
+        "priority": "2, 1, 6, 3, 4, 7, 8, 5"
+    },
+    "SH": {
+        "Q": {
+            "rgb": [
+                58,
+                32,
+                105
+            ],
+            "q_attack_mode": "Tap",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                222,
+                98,
+                223
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                34,
+                20,
+                70
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                140,
+                75,
+                203
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                135,
+                68,
+                220
+            ],
+            "a_attack_mode": "Tap",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                218,
+                180,
+                254
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                103,
+                74,
+                230
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                247,
+                69,
+                28
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                218,
+                61,
+                65
+            ],
+            "hold_awakening": false,
+            "hold_awakening_for": 4
+        },
+        "priority": "8, 7, 6, 5, 4, 3, 2, 1"
+    },
+    "Destroya": {
+        "Q": {
+            "rgb": [
+                8,
+                213,
+                239
+            ],
+            "q_attack_mode": "Tap",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                45,
+                21,
+                98
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                14,
+                52,
+                90
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                2,
+                57,
+                101
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                41,
+                20,
+                85
+            ],
+            "a_attack_mode": "Tap",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                16,
+                82,
+                165
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                29,
+                195,
+                243
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                188,
+                69,
+                222
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                93,
+                147,
+                139
+            ],
+            "hold_awakening": false,
+            "hold_awakening_for": 4
+        },
+        "priority": "8, 7, 6, 5, 4, 3, 2, 1"
+    },
+    "Pally": {
+        "Q": {
+            "rgb": [
+                181,
+                141,
+                30
+            ],
+            "q_attack_mode": "Tap",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                194,
+                165,
+                86
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                12,
+                67,
+                201
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                203,
+                140,
+                36
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                16,
+                57,
+                127
+            ],
+            "a_attack_mode": "Tap",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                159,
+                114,
+                29
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                27,
+                170,
+                250
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                90,
+                56,
+                16
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                112,
+                77,
+                29
+            ],
+            "hold_awakening": false,
+            "hold_awakening_for": 4
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "Tempproject": {
+        "Q": {
+            "rgb": [
+                48,
+                10,
+                5
+            ],
+            "q_attack_mode": "Tap",
+            "q_attack_wait": 0.25,
+            "q_attack_hold": 3.0
+        },
+        "W": {
+            "rgb": [
+                205,
+                65,
+                22
+            ],
+            "w_attack_mode": "Tap",
+            "w_attack_wait": 0.25,
+            "w_attack_hold": 0.0
+        },
+        "E": {
+            "rgb": [
+                145,
+                62,
+                12
+            ],
+            "e_attack_wait": 0.25,
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0
+        },
+        "R": {
+            "rgb": [
+                65,
+                31,
+                13
+            ],
+            "r_attack_wait": 0.25,
+            "r_attack_hold": 0.0,
+            "r_attack_mode": "Tap"
+        },
+        "A": {
+            "rgb": [
+                218,
+                127,
+                44
+            ],
+            "a_attack_mode": "Tap",
+            "a_attack_wait": 0.25,
+            "a_attack_hold": 2.0
+        },
+        "S": {
+            "rgb": [
+                84,
+                37,
+                17
+            ],
+            "s_attack_hold": 0.0,
+            "s_attack_mode": "Tap",
+            "s_attack_wait": 0.25
+        },
+        "D": {
+            "rgb": [
+                187,
+                92,
+                26
+            ],
+            "d_attack_wait": 0.25,
+            "d_attack_hold": 0.0,
+            "d_attack_mode": "Tap"
+        },
+        "F": {
+            "rgb": [
+                44,
+                11,
+                5
+            ],
+            "f_attack_wait": 0.25,
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0
+        },
+        "awakening": {
+            "rgb": [
+                103,
+                39,
+                7
+            ],
+            "hold_awakening": false,
+            "hold_awakening_for": 4
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    }
+}
