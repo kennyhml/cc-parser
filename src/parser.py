@@ -49,12 +49,26 @@ class CCParser:
         "guild_ui_2": "guild_ui_u",
         "bifrost_ui_1": "bifrost_alt",
         "bifrost_ui_2": "bifrost_w",
+        "id": "discord_id",
+        "token": "discord_token",
+        "error_mention": "at_on_events",
+        "post_special_portal": "post_specials",
+        "post_progress": "post_time",
+        "post_statistics": "post_updates",
+        "shutdown_pc": "acr_shutdown_pc",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
     }
 
     def __init__(self) -> None:
         self._ensure_files_present()
+
         self._load_files_to_parse()
         self._load_schema_files()
+        self._ensure_preset_completeness()
+
         self._create_parsed_data()
 
     def parse_keybinds(self) -> None:
@@ -81,7 +95,9 @@ class CCParser:
         self.parsed_keybinds["primary_mouse"] = mouse_key
 
         lg.info(
-            f"Parsing keybinds complete. Total keys: {len(self.parsed_keybinds)}, schema keys: {len(schema.keys())}"
+            f"Parsing 'keybinds' complete. "
+            f"Total keys: {len(self.parsed_keybinds)}, schema keys: {len(schema.keys())}. "
+            f"Keys not parsed: {set(schema.keys()).difference(self.parsed_keybinds.keys())}"
         )
 
     def parse_settings(self) -> None:
@@ -111,6 +127,11 @@ class CCParser:
                 f"Total keys: {len(parsed)}, schema keys: {len(schema.keys())}. "
                 f"Keys not parsed: {set(schema.keys()).difference(parsed.keys())}"
             )
+
+    def parse_presets(self) -> None:
+        all_presets = set(self.settings_data.keys()).difference(
+            ["global_keys", "chaos", "discord", "altcycler"]
+        )
 
     @staticmethod
     def _add_retained_keys(new_dict: dict, to_parse: dict, schema: dict) -> None:
@@ -154,6 +175,22 @@ class CCParser:
             if k in schema.keys() and v in to_parse.keys():
                 lg.info(f"Found new version of deprecated key '{v}': '{k}'")
                 new_dict[k] = to_parse[v]
+
+    def _ensure_preset_completeness(self) -> None:
+        """Makes sure that all presets in the settings.json are also present
+        in the customrotation.json.
+
+        Raises
+        ------
+        `LookupError`
+            When one or more presets are only present in either file
+        """
+        all_presets = set(self.settings_data.keys()).difference(
+            ["global_keys", "chaos", "discord", "altcycler"]
+        )
+        diff = all_presets.difference(self.rotation_data.keys())
+        if diff:
+            raise LookupError(f"FATAL! Preset(s) {diff} is only present in one file!")
 
     def _ensure_files_present(self) -> None:
         """Validates that all required files are present.
