@@ -26,8 +26,9 @@ class CCParser:
     PARSE_MAPPING: dict[str, str] = {
         "selected_character": "current_char",
         "main_character": "main_char_position",
-        "allow_potions": "use_potion",
+        "allow_potions": "use_potions",
         "allow_speciality": "use_transform",
+        "allow_awakening": "use_awakening",
         "allow_gold_portal_skills": "gold_portal_skills",
         "stage_1_focus": "focus_enemies_s1",
         "heal_at": "hp_value",
@@ -99,6 +100,8 @@ class CCParser:
             f"Total keys: {len(self.parsed_keybinds)}, schema keys: {len(schema.keys())}. "
             f"Keys not parsed: {set(schema.keys()).difference(self.parsed_keybinds.keys())}"
         )
+        with open(f"output/keybinds.json", "w") as f:
+            json.dump(self.parsed_keybinds, f, indent=4)
 
     def parse_settings(self) -> None:
         """Parses all the global keys from a v5 config into the different
@@ -129,9 +132,37 @@ class CCParser:
             )
 
     def parse_presets(self) -> None:
+        """Parses all presets in the v5 file into new presets in v6,
+        keeping the same data but with different keys.
+
+        This is achieved by first checking whether any pairs in the data to
+        parse still use the same key as the new data uses, if so that pair
+        will just be added right away.
+
+        Otherwise the `PARSE_MAPPING` dictionary is used to check if we can
+        find any new versions of deprecated keys in the data to parse and once
+        again add the value to that key.
+        """
         all_presets = set(self.settings_data.keys()).difference(
             ["global_keys", "chaos", "discord", "altcycler"]
         )
+        schema = self.settings_schema["SL"]
+
+        for preset in all_presets:
+            to_parse = self.settings_data[preset]
+            parsed = self.parsed_settings_data[preset] = {}
+
+            self._add_retained_keys(parsed, to_parse, schema)
+            self._add_parse_map_keys(parsed, to_parse, schema)
+
+            lg.info(
+                f"Parsing '{preset}' complete. "
+                f"Total keys: {len(parsed)}, schema keys: {len(schema.keys())}. "
+                f"Keys not parsed: {set(schema.keys()).difference(parsed.keys())}"
+            )
+
+        with open(f"output/settings.json", "w") as f:
+            json.dump(self.parsed_settings_data, f, indent=4)
 
     @staticmethod
     def _add_retained_keys(new_dict: dict, to_parse: dict, schema: dict) -> None:
