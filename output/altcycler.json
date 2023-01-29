@@ -1,0 +1,146 @@
+{
+    "c1": {
+        "enabled": true,
+        "preset": "Soulfister",
+        "level": "T3 - 1370",
+        "daily": "Leaps 2",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c2": {
+        "enabled": true,
+        "preset": "dead blade",
+        "level": "T3 - 1355",
+        "daily": "Leaps 2",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c3": {
+        "enabled": true,
+        "preset": "shitslinger",
+        "level": "T3 - 1370",
+        "daily": "Leaps 2",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c4": {
+        "enabled": true,
+        "preset": "sorc",
+        "level": "T3 - 1370",
+        "daily": "Leaps 2",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c5": {
+        "enabled": true,
+        "preset": "SH",
+        "level": "T3 - 1370",
+        "daily": "Leaps 1",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c6": {
+        "enabled": true,
+        "preset": "Destroyer",
+        "level": "T3 - 1370",
+        "daily": "Leaps 1",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c7": {
+        "enabled": true,
+        "preset": "Paladin",
+        "level": "T3 - 1100",
+        "daily": "Leaps 1",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c8": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c9": {
+        "enabled": false,
+        "preset": "shitslinger",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c10": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c11": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c12": {
+        "enabled": true,
+        "preset": "raper",
+        "level": "T3 - 1100",
+        "daily": "Leaps 2",
+        "include_chaos": true,
+        "aid_research": false
+    },
+    "c13": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c14": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c15": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c16": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c17": {
+        "enabled": false,
+        "preset": "Bard",
+        "level": "T3 - 1310",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    },
+    "c18": {
+        "enabled": false,
+        "preset": "i can nix",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "include_chaos": false,
+        "aid_research": false
+    }
+}

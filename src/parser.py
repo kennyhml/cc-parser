@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 
 from .log import logging as lg
@@ -57,20 +58,24 @@ class CCParser:
         "post_progress": "post_time",
         "post_statistics": "post_updates",
         "shutdown_pc": "acr_shutdown_pc",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
+        "aid_research": "include_guild",
     }
 
     def __init__(self) -> None:
         self._ensure_files_present()
-
         self._load_files_to_parse()
         self._load_schema_files()
-        self._ensure_preset_completeness()
-
         self._create_parsed_data()
+
+    def __call__(self) -> None:
+        self._wipe_output_folder()
+
+        self._ensure_preset_completeness()
+        self.parse_settings()
+        self.parse_presets()
+        self.parse_keybinds()
+        self.parse_altcycler()
+        self._save_parsed_files()
 
     def parse_keybinds(self) -> None:
         """Parses all the keybinds into the new keybinds.json.
@@ -146,23 +151,71 @@ class CCParser:
         all_presets = set(self.settings_data.keys()).difference(
             ["global_keys", "chaos", "discord", "altcycler"]
         )
-        schema = self.settings_schema["SL"]
 
         for preset in all_presets:
-            to_parse = self.settings_data[preset]
-            parsed = self.parsed_settings_data[preset] = {}
+            self._parse_preset_settings(preset)
+            self._parse_preset_skills(preset)
 
-            self._add_retained_keys(parsed, to_parse, schema)
-            self._add_parse_map_keys(parsed, to_parse, schema)
+    def parse_altcycler(self) -> None:
+        """Parses all characters in the altcycler settings on v5 into
+        the new altcycler settings of v6"""
+        schema = self.altcycler_schema["c1"]
 
-            lg.info(
-                f"Parsing '{preset}' complete. "
-                f"Total keys: {len(parsed)}, schema keys: {len(schema.keys())}. "
-                f"Keys not parsed: {set(schema.keys()).difference(parsed.keys())}"
-            )
+        for c, v in self.altcycler_data.items():
+            parsed = self.parsed_altcycler_data[c] = {}
+            self._add_retained_keys(parsed, v, schema)
+            self._add_parse_map_keys(parsed, v, schema)
 
-        with open(f"output/settings.json", "w") as f:
-            json.dump(self.parsed_settings_data, f, indent=4)
+    def _parse_preset_settings(self, preset: str) -> None:
+        """Parses all preset settings in settings.json into the new v6 preset
+        from an existing v5 preset.
+
+        Parameters
+        ----------
+        preset :class:`preset`:
+            The preset to be parsed
+        """
+        schema = self.settings_schema["SL"]
+        to_parse = self.settings_data[preset]
+        parsed = self.parsed_settings_data[preset] = {}
+
+        self._add_retained_keys(parsed, to_parse, schema)
+        self._add_parse_map_keys(parsed, to_parse, schema)
+
+        lg.info(
+            f"Parsing '{preset}' complete. "
+            f"Total keys: {len(parsed)}, schema keys: {len(schema.keys())}. "
+            f"Keys not parsed: {set(schema.keys()).difference(parsed.keys())}"
+        )
+
+    def _parse_preset_skills(self, preset: str) -> None:
+        """Parses all preset settings in customrotation.json into the new v6 preset
+        from an existing v5 preset.
+
+        Parameters
+        ----------
+        preset :class:`preset`:
+            The preset to be parsed
+        """
+        schema = self.skills_schema["SL"]
+        to_parse = self.rotation_data[preset]
+        self.parsed_rotation_data[preset] = {}
+
+        for k, v in self.skills_schema["SL"].items():
+            parsed = self.parsed_rotation_data[preset][k] = {}
+            if isinstance(v, dict):
+                self._add_retained_keys(parsed, to_parse, v)
+            else:
+                self.parsed_rotation_data[preset][k] = v
+
+        awk = self.parsed_rotation_data[preset]["awakening"]
+        self._add_retained_keys(awk, self.settings_data[preset], schema["awakening"])
+
+        lg.info(
+            f"Parsing '{preset}' complete. "
+            f"Total keys: {len(self.parsed_rotation_data[preset])}, schema keys: {len(schema.keys())}. "
+            f"Keys not parsed: {set(schema.keys()).difference(self.parsed_rotation_data[preset].keys())}"
+        )
 
     @staticmethod
     def _add_retained_keys(new_dict: dict, to_parse: dict, schema: dict) -> None:
@@ -265,20 +318,25 @@ class CCParser:
             self.keybinds_schema: dict[str, str] = json.load(f)
 
     def _create_parsed_data(self) -> None:
+        """Creates empty dictionaries to be populated with parsed data"""
         self.parsed_rotation_data: dict[str, dict] = {}
         self.parsed_settings_data: dict[str, dict] = {}
         self.parsed_keybinds: dict[str, str] = {}
         self.parsed_altcycler_data: dict[str, dict] = {}
 
+    def _save_parsed_files(self) -> None:
+        """Saves all settings to configs"""
+        destinations = {
+            "settings": self.parsed_settings_data,
+            "keybinds": self.parsed_keybinds,
+            "altcycler": self.parsed_altcycler_data,
+            "skills": self.parsed_rotation_data,
+        }
+        for file, var in destinations.items():
+            with open(f"output/{file}.json", "w") as f:
+                json.dump(var, f, indent=4)
 
-#    def _save_parsed_files(self) -> None:
-#        """Saves all settings to configs"""
-#        destinations = {
-#            "settings": self.settings_data,
-#            "keybinds": self.keybinds_data,
-#            "altcycler": self.altcycler_data,
-#            "skills": self.skill_data,
-#        }
-#        for file, var in destinations.items():
-#            with open(f"settings/{file}.json", "w") as f:
-#                json.dump(var, f, indent=4)
+    def _wipe_output_folder(self) -> None:
+        filelist = [f for f in os.listdir("output") if f.endswith(".json")]
+        for f in filelist:
+            os.remove(os.path.join("output", f))

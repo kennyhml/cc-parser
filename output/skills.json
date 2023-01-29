@@ -1,0 +1,754 @@
+{
+    "Bard": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.5
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 2.0
+        },
+        "E": {
+            "e_attack_mode": "Hold",
+            "e_attack_hold": 2.0,
+            "e_attack_wait": 0.5
+        },
+        "R": {
+            "r_attack_mode": "Hold",
+            "r_attack_hold": 2.5,
+            "r_attack_wait": 0.5
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.5
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.5
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "barely scratcher": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 1.0
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 1.0
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 2.0,
+            "e_attack_wait": 1.0
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 2.0,
+            "r_attack_wait": 1.5
+        },
+        "A": {
+            "a_attack_mode": "Hold",
+            "a_attack_hold": 1.0,
+            "a_attack_wait": 1.0
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 1.0
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 1.0
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 1.0
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "SH": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.0
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.0
+        },
+        "E": {
+            "e_attack_mode": "Hold",
+            "e_attack_hold": 2.0,
+            "e_attack_wait": 0.0
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.0
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 3.0,
+            "a_attack_wait": 0.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.5
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.5
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "raper": {
+        "Q": {
+            "q_attack_mode": "Double Cast",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.5
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.5
+        },
+        "E": {
+            "e_attack_mode": "Double Cast",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.5
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.5
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.5
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.5
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "i can nix": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 1.0
+        },
+        "W": {
+            "w_attack_mode": "Double Cast",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.0
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 3.0
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.0
+        },
+        "A": {
+            "a_attack_mode": "Hold",
+            "a_attack_hold": 2.5,
+            "a_attack_wait": 0.0
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 1.5
+        },
+        "D": {
+            "d_attack_mode": "Double Cast",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.0
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.0
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "shitter": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.5
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.5
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.5
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.5
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.5
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.5
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "Paladin": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.3
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 1.3
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.3
+        },
+        "R": {
+            "r_attack_mode": "Double Cast",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.3
+        },
+        "A": {
+            "a_attack_mode": "Hold",
+            "a_attack_hold": 1.0,
+            "a_attack_wait": 0.1
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.3
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.3
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "sorc": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.0
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.0
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.0
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.0
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.0
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.0
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.0
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.0
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "world of tanks": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 1.0
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 1.0
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 1.0
+        },
+        "R": {
+            "r_attack_mode": "Hold",
+            "r_attack_hold": 2.5,
+            "r_attack_wait": 1.0
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 1.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 1.0
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 1.0
+        },
+        "F": {
+            "f_attack_mode": "Hold",
+            "f_attack_hold": 2.5,
+            "f_attack_wait": 1.0
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "shitslinger": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.0
+        },
+        "W": {
+            "w_attack_mode": "Hold",
+            "w_attack_hold": 2.0,
+            "w_attack_wait": 0.0
+        },
+        "E": {
+            "e_attack_mode": "Hold",
+            "e_attack_hold": 2.5,
+            "e_attack_wait": 0.0
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.0
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.0
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.0
+        },
+        "D": {
+            "d_attack_mode": "Hold",
+            "d_attack_hold": 2.0,
+            "d_attack_wait": 0.0
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.0
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "Zerker": {
+        "Q": {
+            "q_attack_mode": "Hold",
+            "q_attack_hold": 4.0,
+            "q_attack_wait": 0.5
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.5
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 2.0,
+            "e_attack_wait": 0.5
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 2.0,
+            "r_attack_wait": 0.5
+        },
+        "A": {
+            "a_attack_mode": "Hold",
+            "a_attack_hold": 1.5,
+            "a_attack_wait": 0.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.5
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.5
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "dead blade": {
+        "Q": {
+            "q_attack_mode": "Hold",
+            "q_attack_hold": 1.5,
+            "q_attack_wait": 0.0
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.0
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.0
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.0
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.0
+        },
+        "S": {
+            "s_attack_mode": "Hold",
+            "s_attack_hold": 3.0,
+            "s_attack_wait": 0.0
+        },
+        "D": {
+            "d_attack_mode": "Hold",
+            "d_attack_hold": 3.0,
+            "d_attack_wait": 0.0
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.0
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "Scouta": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.5
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.5
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.5
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.5
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.5
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.5
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 1.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "Soulfister": {
+        "Q": {
+            "q_attack_mode": "Hold",
+            "q_attack_hold": 4.0,
+            "q_attack_wait": 0.0
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.0
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.0
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.0
+        },
+        "A": {
+            "a_attack_mode": "Hold",
+            "a_attack_hold": 2.0,
+            "a_attack_wait": 0.0
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.0
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.0
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.0
+        },
+        "awakening": {
+            "hold_awakening": true,
+            "hold_awakening_for": 4
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "Destroyer": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.5
+        },
+        "W": {
+            "w_attack_mode": "Hold",
+            "w_attack_hold": 4.0,
+            "w_attack_wait": 0.5
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.5
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 0.0,
+            "r_attack_wait": 0.5
+        },
+        "A": {
+            "a_attack_mode": "Tap",
+            "a_attack_hold": 0.0,
+            "a_attack_wait": 0.5
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.5
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.5
+        },
+        "F": {
+            "f_attack_mode": "Hold",
+            "f_attack_hold": 4.0,
+            "f_attack_wait": 0.5
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    },
+    "average american": {
+        "Q": {
+            "q_attack_mode": "Tap",
+            "q_attack_hold": 0.0,
+            "q_attack_wait": 0.3
+        },
+        "W": {
+            "w_attack_mode": "Tap",
+            "w_attack_hold": 0.0,
+            "w_attack_wait": 0.3
+        },
+        "E": {
+            "e_attack_mode": "Tap",
+            "e_attack_hold": 0.0,
+            "e_attack_wait": 0.3
+        },
+        "R": {
+            "r_attack_mode": "Tap",
+            "r_attack_hold": 2.0,
+            "r_attack_wait": 0.3
+        },
+        "A": {
+            "a_attack_mode": "Hold",
+            "a_attack_hold": 2.5,
+            "a_attack_wait": 0.3
+        },
+        "S": {
+            "s_attack_mode": "Tap",
+            "s_attack_hold": 0.0,
+            "s_attack_wait": 0.3
+        },
+        "D": {
+            "d_attack_mode": "Tap",
+            "d_attack_hold": 0.0,
+            "d_attack_wait": 0.3
+        },
+        "F": {
+            "f_attack_mode": "Tap",
+            "f_attack_hold": 0.0,
+            "f_attack_wait": 0.3
+        },
+        "awakening": {
+            "hold_awakening": false,
+            "hold_awakening_for": 1
+        },
+        "priority": "1, 2, 3, 4, 5, 6, 7, 8"
+    }
+}
