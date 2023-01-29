@@ -7,8 +7,7 @@
         "key": "",
         "debug_mode": true,
         "logs_delete_after": 1,
-        "offline_mode": true,
-        "server": "Azena"
+        "offline_mode": true
     },
     "chaos": {
         "terminate": false,
@@ -17,13 +16,10 @@
         "switch_channel_frequency": 60,
         "simulate_aura": true,
         "boss_loot_time": 1,
-        "run_stage_3": true,
         "stage_2_limited": true,
         "stage_2_max_time": 90,
         "bosskill_limited": true,
-        "bosskill_max_time": 30,
-        "stage_3_limited": true,
-        "stage_3_max_time": 180
+        "bosskill_max_time": 30
     },
     "discord": {
         "post": true,
