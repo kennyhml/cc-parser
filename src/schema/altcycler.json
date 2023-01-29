@@ -1,0 +1,242 @@
+{
+    "c1": {
+        "enabled": true,
+        "preset": "SL",
+        "level": "T3 - 1400",
+        "daily": "Leaps #1",
+        "aid_research": true,
+        "donate": "Silver",
+        "include_chaos": true,
+        "silver_weekly": true
+    },
+    "c2": {
+        "enabled": true,
+        "preset": "DB",
+        "level": "T3 - 1370",
+        "daily": "Leaps #2",
+        "aid_research": true,
+        "donate": "None",
+        "include_chaos": true,
+        "silver_weekly": true
+    },
+    "c3": {
+        "enabled": true,
+        "preset": "GS",
+        "level": "T3 - 1370",
+        "daily": "Leaps #2",
+        "aid_research": false,
+        "donate": "None",
+        "include_chaos": true,
+        "silver_weekly": true
+    },
+    "c4": {
+        "enabled": true,
+        "preset": "Sorc",
+        "level": "T3 - 1370",
+        "daily": "Leaps #2",
+        "aid_research": false,
+        "donate": "None",
+        "include_chaos": true,
+        "silver_weekly": true
+    },
+    "c5": {
+        "enabled": true,
+        "preset": "SH",
+        "level": "T3 - 1370",
+        "daily": "Leaps #1",
+        "aid_research": false,
+        "donate": "None",
+        "include_chaos": true,
+        "silver_weekly": true
+    },
+    "c6": {
+        "enabled": true,
+        "preset": "Destroya",
+        "level": "T3 - 1370",
+        "daily": "Leaps #1",
+        "aid_research": false,
+        "donate": "None",
+        "include_chaos": true,
+        "silver_weekly": true
+    },
+    "c7": {
+        "enabled": true,
+        "preset": "Pally",
+        "level": "T3 - 1100",
+        "daily": "Leaps #1",
+        "aid_research": false,
+        "donate": "None",
+        "include_chaos": true,
+        "silver_weekly": true
+    },
+    "c8": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c9": {
+        "enabled": false,
+        "preset": "Deadblade",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "None",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c10": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c11": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c12": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c13": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c14": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c15": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c16": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c17": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c18": {
+        "enabled": false,
+        "preset": "Tempproject",
+        "level": "T3 - 1370",
+        "daily": "Skip",
+        "aid_research": false,
+        "donate": "Silver",
+        "include_chaos": false,
+        "silver_weekly": true
+    },
+    "c19": {
+        "enabled": true,
+        "preset": "Soulfister",
+        "include_chaos": false,
+        "silver_weekly": false,
+        "aid_research": false,
+        "level": "T3 - 1400",
+        "daily": "Skip",
+        "donate": "None"
+    },
+    "c20": {
+        "enabled": false,
+        "preset": "Soulfister",
+        "include_chaos": false,
+        "silver_weekly": false,
+        "aid_research": false,
+        "level": "T3 - 1400",
+        "daily": "Skip",
+        "donate": "None"
+    },
+    "c21": {
+        "enabled": false,
+        "preset": "Soulfister",
+        "include_chaos": false,
+        "silver_weekly": false,
+        "aid_research": false,
+        "level": "T3 - 1400",
+        "daily": "Skip",
+        "donate": "None"
+    },
+    "c22": {
+        "enabled": false,
+        "preset": "Soulfister",
+        "include_chaos": false,
+        "silver_weekly": false,
+        "aid_research": false,
+        "level": "T3 - 1400",
+        "daily": "Skip",
+        "donate": "None"
+    },
+    "c23": {
+        "enabled": false,
+        "preset": "Soulfister",
+        "include_chaos": false,
+        "silver_weekly": false,
+        "aid_research": false,
+        "level": "T3 - 1400",
+        "daily": "Skip",
+        "donate": "None"
+    },
+    "c24": {
+        "enabled": false,
+        "preset": "Soulfister",
+        "include_chaos": false,
+        "silver_weekly": false,
+        "aid_research": false,
+        "level": "T3 - 1400",
+        "daily": "Skip",
+        "donate": "None"
+    }
+}
