@@ -206,7 +206,7 @@ class CCParser:
             if isinstance(v, dict):
                 self._add_retained_keys(parsed, to_parse, v)
             else:
-                self.parsed_rotation_data[preset][k] = v
+                self.parsed_rotation_data[preset][k] = self.rotation_data[k]
 
         awk = self.parsed_rotation_data[preset]["awakening"]
         self._add_retained_keys(awk, self.settings_data[preset], schema["awakening"])
@@ -285,7 +285,7 @@ class CCParser:
             When an expected file could not be found
         """
         for f in self.SCHEMA_FILES:
-            if not Path(f"src/schema/{f}.json").exists():
+            if not Path(f"schema/{f}.json").exists():
                 raise FileNotFoundError(f"FATAL: Missing schema '{f}'")
 
         for f in self.V5_TO_PARSE_FILES:
@@ -305,16 +305,16 @@ class CCParser:
 
     def _load_schema_files(self) -> None:
         """Loads all files to be parsed"""
-        with open("src/schema/skills.json") as f:
+        with open("schema/skills.json") as f:
             self.skills_schema: dict[str, dict] = json.load(f)
 
-        with open("src/schema/settings.json") as f:
+        with open("schema/settings.json") as f:
             self.settings_schema: dict[str, dict] = json.load(f)
 
-        with open("src/schema/altcycler.json") as f:
+        with open("schema/altcycler.json") as f:
             self.altcycler_schema: dict[str, dict] = json.load(f)
 
-        with open("src/schema/keybinds.json") as f:
+        with open("schema/keybinds.json") as f:
             self.keybinds_schema: dict[str, str] = json.load(f)
 
     def _create_parsed_data(self) -> None:
