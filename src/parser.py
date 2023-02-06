@@ -23,7 +23,7 @@ class CCParser:
     """
 
     SCHEMA_FILES = ["settings", "skills", "keybinds", "altcycler"]
-    V5_TO_PARSE_FILES = ["settings", "customrotation", "acrc"]
+    V5_TO_PARSE_FILES = ["settings", "customrotation", "acrc", "rgb"]
     PARSE_MAPPING: dict[str, str] = {
         "selected_character": "current_char",
         "main_character": "main_char_position",
@@ -59,6 +59,7 @@ class CCParser:
         "post_statistics": "post_updates",
         "shutdown_pc": "acr_shutdown_pc",
         "aid_research": "include_guild",
+        "priority": "skill_priorities",
     }
 
     def __init__(self) -> None:
@@ -201,12 +202,21 @@ class CCParser:
         to_parse = self.rotation_data[preset]
         self.parsed_rotation_data[preset] = {}
 
-        for k, v in self.skills_schema["SL"].items():
+        rgbs = self.rgb_data[preset]
+
+        for idx, (k, v) in enumerate(self.skills_schema["SL"].items(), start=1):
             parsed = self.parsed_rotation_data[preset][k] = {}
             if isinstance(v, dict):
                 self._add_retained_keys(parsed, to_parse, v)
+                if idx < 9:
+                    parsed["rgb"] = rgbs[f"skill_{idx}"]
             else:
-                self.parsed_rotation_data[preset][k] = self.rotation_data[k]
+                try:
+                    self.parsed_rotation_data[preset][k] = self.rotation_data[preset][k]
+                except KeyError:
+                    self.parsed_rotation_data[preset][k] = self.rotation_data[preset][
+                        self.PARSE_MAPPING[k]
+                    ]
 
         awk = self.parsed_rotation_data[preset]["awakening"]
         self._add_retained_keys(awk, self.settings_data[preset], schema["awakening"])
@@ -272,9 +282,12 @@ class CCParser:
         all_presets = set(self.settings_data.keys()).difference(
             ["global_keys", "chaos", "discord", "altcycler"]
         )
-        diff = all_presets.difference(self.rotation_data.keys())
-        if diff:
-            raise LookupError(f"FATAL! Preset(s) {diff} is only present in one file!")
+        rotation_diff = all_presets.difference(self.rotation_data.keys())
+        skill_diff = all_presets.difference(self.rgb_data.keys())
+        if rotation_diff or rotation_diff:
+            raise LookupError(
+                f"FATAL! Preset(s) {skill_diff or rotation_diff} is only present in one file!"
+            )
 
     def _ensure_files_present(self) -> None:
         """Validates that all required files are present.
@@ -302,6 +315,9 @@ class CCParser:
 
         with open("input/acrc.json") as f:
             self.altcycler_data: dict[str, dict] = json.load(f)
+
+        with open("input/rgb.json") as f:
+            self.rgb_data: dict[str, dict] = json.load(f)
 
     def _load_schema_files(self) -> None:
         """Loads all files to be parsed"""
